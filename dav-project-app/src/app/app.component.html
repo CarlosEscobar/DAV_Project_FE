@@ -1,0 +1,29 @@
+<h1>Proyecto DAV</h1>
+
+<div class="tab">
+  <button id="btnTab1" class="tablinks" (click)="openTab('btnTab1', 'tab1')">Register</button>
+  <button id="btnTab2"  class="tablinks" (click)="openTab('btnTab2', 'tab2')">Sign In</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+  <label>Name </label>
+  <input type="text" [(ngModel)]="tab1_name"/>
+  <br/><br/>
+  <label>Username </label>
+  <input type="text" [(ngModel)]="tab1_username"/>
+  <br/><br/>
+  <label>Password </label>
+  <input type="text" [(ngModel)]="tab1_password"/>
+  <br/><br/>
+  <button (click)="doRegister()">Submit</button>
+</div>
+
+<div id="tab2" class="tabcontent">
+  <label>Username </label>
+  <input type="text" [(ngModel)]="tab2_username"/>
+  <br/><br/>
+  <label>Password </label>
+  <input type="text" [(ngModel)]="tab2_password" />
+  <br/><br/>
+  <button (click)="doLogin()">Submit</button>
+</div>
